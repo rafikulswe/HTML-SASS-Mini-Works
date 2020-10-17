@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: lightblue;
+}
+
+.social-kit {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.social-kit a {
+  text-decoration: none;
+  padding: 5px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: #ffffff;
+  width: 210px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateX(-170px);
+          transform: translateX(-170px);
+}
+
+.social-kit a.facebook {
+  background: #3b5998;
+}
+
+.social-kit a.twitter {
+  background: #00aced;
+}
+
+.social-kit a.instagram {
+  background: #e4405f;
+}
+
+.social-kit a.youtube {
+  background: #cd201f;
+}
+
+.social-kit a:hover {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.social-kit a i {
+  padding-left: 20px;
+  font-size: 30px;
+  animation: letszoom 3s linear alternate-reverse infinite;
+}
+
+@-webkit-keyframes letszoom {
+  from {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes letszoom {
+  from {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/*# sourceMappingURL=style.css.map */
